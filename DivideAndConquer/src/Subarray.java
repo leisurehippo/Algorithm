@@ -67,7 +67,7 @@ public class Subarray {
         }
     }
     public static void main(String[] args) {
-        //测试数据
+        //test
         int [] arr = {13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
         int len = arr.length;
         int [] result = Subarray(arr,0,len-1);
