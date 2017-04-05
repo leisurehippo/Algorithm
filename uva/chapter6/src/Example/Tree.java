@@ -1,3 +1,5 @@
+package Example;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -8,8 +10,8 @@ import java.util.StringTokenizer;
  */
 
 public class Tree {
-    public static Node root;
-    public static ArrayList<Node> arrayList = new ArrayList<>();
+    public static Example.Node root;
+    public static ArrayList<Example.Node> arrayList = new ArrayList<>();
 
     /**
      * build tree recursively(according to the inorder traversal and postorder traversal),
@@ -18,10 +20,10 @@ public class Tree {
      * @param inOrder
      * @param postOrder
      */
-    public static void buildTree(Node r, List<Integer> inOrder, List<Integer> postOrder){
-        Node temp = r;
-        Node tempL = r;
-        Node tempR = r;
+    public static void buildTree(Example.Node r, List<Integer> inOrder, List<Integer> postOrder){
+        Example.Node temp = r;
+        Example.Node tempL = r;
+        Example.Node tempR = r;
 
         int data = postOrder.get(postOrder.size()-1);//the last element of the postorder traversal is the root
         int index = inOrder.indexOf(data);//the index of the root in the inorder traversal
@@ -43,14 +45,14 @@ public class Tree {
 
         //if the node has left tree
         if (tempInL.size() != 0 && tempPostL.size() != 0){
-            tempL.lTree = new Node();  //create a left tree
+            tempL.lTree = new Example.Node();  //create a left tree
             tempL = tempL.lTree;       //set tempL to its left tree
             tempL.count += count;      //add count into its left tree's count
             buildTree(tempL,tempInL,tempPostL);
         }
         //if the node has right tree
         if (tempInR.size() != 0 && tempPostR.size() != 0){
-            tempR.rTree = new Node();  //create a right tree
+            tempR.rTree = new Example.Node();  //create a right tree
             tempR = tempR.rTree;       //set tempRto its right tree
             tempR.count += count;      //add count into its right tree's count
             buildTree(tempR,tempInR,tempPostR);
@@ -74,7 +76,7 @@ public class Tree {
                 listPost.add(Integer.valueOf(tokenPost.nextToken()));
 
             //build the tree recursively
-            root = new Node();
+            root = new Example.Node();
             arrayList.clear();
             buildTree(root, listIn, listPost);
 
@@ -82,7 +84,7 @@ public class Tree {
             int weight = arrayList.get(0).count;
             int index = arrayList.get(0).data;
             for (int i = 0; i < arrayList.size(); i++) {
-                Node leave = arrayList.get(i);
+                Example.Node leave = arrayList.get(i);
                 if (leave.count < weight){
                     weight = leave.count;
                     index = leave.data;

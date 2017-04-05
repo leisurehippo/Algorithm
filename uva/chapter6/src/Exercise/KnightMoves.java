@@ -1,3 +1,5 @@
+package Exercise;
+
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.concurrent.LinkedBlockingQueue;

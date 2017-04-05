@@ -1,3 +1,5 @@
+package Example;
+
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
