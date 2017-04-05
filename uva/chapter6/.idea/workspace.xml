@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8d4916f-30d6-4f4a-ab52-588015819731" name="Default" comment="Patrol Robot">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Exercise/PatrolRobot.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PatrolRobot.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AbbottRevenge.java" afterPath="$PROJECT_DIR$/src/Example/AbbottRevenge.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/BeijuText.java" afterPath="$PROJECT_DIR$/src/Example/BeijuText.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DroppingBall.java" afterPath="$PROJECT_DIR$/src/Example/DroppingBall.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/IdealPath.java" afterPath="$PROJECT_DIR$/src/Example/IdealPath.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/KnightMoves.java" afterPath="$PROJECT_DIR$/src/Exercise/KnightMoves.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MatrixChainMultiplication.java" afterPath="$PROJECT_DIR$/src/Example/MatrixChainMultiplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Mobile.java" afterPath="$PROJECT_DIR$/src/Example/Mobile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/OrderingTasks.java" afterPath="$PROJECT_DIR$/src/Example/OrderingTasks.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ParenthesesBalance.java" afterPath="$PROJECT_DIR$/src/Exercise/ParenthesesBalance.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Rails.java" afterPath="$PROJECT_DIR$/src/Example/Rails.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/RecoveryOfFibonacci.java" afterPath="$PROJECT_DIR$/src/Example/RecoveryOfFibonacci.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/STrees.java" afterPath="$PROJECT_DIR$/src/Exercise/STrees.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TopologicalSort.java" afterPath="$PROJECT_DIR$/src/Example/TopologicalSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Tree.java" afterPath="$PROJECT_DIR$/src/Example/Tree.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TreeRecovery.java" afterPath="$PROJECT_DIR$/src/Exercise/TreeRecovery.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TreesLevel.java" afterPath="$PROJECT_DIR$/src/Example/TreesLevel.java" />
+    <list default="true" id="f8d4916f-30d6-4f4a-ab52-588015819731" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="394b70b2-0f2e-4bb8-b752-0faf9c4a859f" name="Rejected commit: Default" comment="" />
@@ -89,7 +69,7 @@
       <file leaf-file-name="PatrolRobot.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Exercise/PatrolRobot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43170103">
+            <state vertical-scroll-proportion="0.6555773">
               <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding />
             </state>
@@ -892,7 +872,7 @@
       <workItem from="1489471696736" duration="9713000" />
       <workItem from="1490441015492" duration="28975000" />
       <workItem from="1490606398975" duration="10000" />
-      <workItem from="1491400945841" duration="2345000" />
+      <workItem from="1491400945841" duration="2369000" />
     </task>
     <task id="LOCAL-00001" summary="Patrol Robot">
       <created>1491403135574</created>
@@ -900,15 +880,21 @@
       <option name="project" value="LOCAL" />
       <updated>1491403135574</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Patrol Robot">
+      <created>1491404794857</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491404794857</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41043000" />
+    <option name="totallyTimeSpent" value="41067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -916,7 +902,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36805555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1189,7 +1175,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercise/PatrolRobot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43170103">
+        <state vertical-scroll-proportion="0.6555773">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
