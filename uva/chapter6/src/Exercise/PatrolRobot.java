@@ -27,6 +27,7 @@ class Grid{
 public class PatrolRobot {
     public static int m, n, k;
     public static int [][]graph;
+    //store the distance from the start(0,0) with certain obstacle
     public static int [][][]dis;
     public static int []move_x = {0, 1, 0, -1};
     public static int []move_y = {1, 0, -1, 0};
@@ -73,21 +74,24 @@ public class PatrolRobot {
         Scanner input = new Scanner(System.in);
         int cases = input.nextInt();
         for (int i = 0; i < cases; i++) {
-
+            //read input
             m = input.nextInt();
             n = input.nextInt();
             k = input.nextInt();
             init();
+            //construct the graph
             for (int j = 0; j < m; j++) {
                 for (int l = 0; l < n; l++) {
                     int aij = input.nextInt();
                     graph[j][l] = aij;
                 }
             }
+            //if k is large, do not use bfs
             if (k > Math.max(n,m)){
                 System.out.println(n + m - 2);
             }else{
                 bfs();
+                //find the min dis in dis[m][n][1~k]
                 ArrayList<Integer> array = new ArrayList<>();
                 for (int j = 0; j <= k; j++) {
                     int d = dis[m-1][n-1][j];
