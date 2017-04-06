@@ -2,35 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ced79e9d-2a74-4607-9c8c-93889e7b8613" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/IdealPath.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/KnightMoves.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/ParenthesesBalance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/RecoveryOfFibonacci.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/STrees.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/Square.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/Tree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/out/production/uva/TreeRecovery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/src/IdealPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/src/KnightMoves.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/src/ParenthesesBalance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/src/RecoveryOfFibonacci.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/src/STrees.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/src/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uva/src/TreeRecovery.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uva/.idea/workspace.xml" afterPath="$PROJECT_DIR$/uva/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uva/chapter6/.idea/workspace.xml" afterPath="$PROJECT_DIR$/uva/chapter6/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uva/chapter6/src/Example/RecoveryOfFibonacci.java" afterPath="$PROJECT_DIR$/uva/chapter6/src/Example/RecoveryOfFibonacci.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uva/chapter6/src/Test.java" afterPath="$PROJECT_DIR$/uva/chapter6/src/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uva/uva.iml" afterPath="$PROJECT_DIR$/uva/uva.iml" />
     </list>
     <ignored path="Algorithm.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/uva/chapter6/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -319,12 +296,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491462467106</updated>
-      <workItem from="1491462468558" duration="72000" />
+      <workItem from="1491462468558" duration="307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72000" />
+    <option name="totallyTimeSpent" value="307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
@@ -375,7 +352,7 @@
     <entry file="file://$PROJECT_DIR$/uva/chapter6/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -8,7 +8,7 @@ public class Test{
         int x = a-'a';
         int y = b-'1';
 
-        System.out.println("test");
+        System.out.println("test1");
         System.out.println(x+" "+y);
     }
 }
