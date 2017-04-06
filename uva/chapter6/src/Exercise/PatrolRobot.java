@@ -53,7 +53,7 @@ public class PatrolRobot {
             Grid grid = queue.poll();
             for (int i = 0; i < 4; i++) {
                 Grid next = move(grid,i,grid.obstacle);
-                //TODO: select those grids which have less obstacles
+                //TODO: select those grids which have less obstacle
                 if (is_inside(next) && next.obstacle <= k){
                     dis[next.x][next.y] = dis[grid.x][grid.y] + 1;
                     queue.add(next);
