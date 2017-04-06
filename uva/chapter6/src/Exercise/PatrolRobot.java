@@ -1,5 +1,6 @@
 package Exercise;
 
+import java.util.ArrayList;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -26,18 +27,14 @@ class Grid{
 public class PatrolRobot {
     public static int m, n, k;
     public static int [][]graph;
-    public static int [][]dis;
-    public static int [][]obstacle;
-    public static boolean [][]flag;
+    public static int [][][]dis;
     public static int []move_x = {0, 1, 0, -1};
     public static int []move_y = {1, 0, -1, 0};
     public static Queue<Grid> queue = new LinkedBlockingQueue<>();
 
-    public static void init(int m ,int n){
+    public static void init(){
         graph = new int[m][n];
-        dis = new int[m][n];
-        obstacle = new int[m][n];
-        flag = new boolean[m][n];
+        dis = new int[m][n][k+1];
         queue.clear();
     }
 
@@ -57,27 +54,15 @@ public class PatrolRobot {
     }
 
     public static void bfs(){
-        dis[0][0] = 1;
-        obstacle[0][0] = 0;
+        dis[0][0][0] = 1;
         Grid start = new Grid(0,0,0);
         queue.add(start);
         while (!queue.isEmpty()){
             Grid grid = queue.poll();
             for (int i = 0; i < 4; i++) {
                 Grid next = move(grid,i,grid.obstacle);
-                //TODO: select those grids which have less obstacle
-                if (is_inside(next) && next.obstacle <= k && (dis[next.x][next.y] == 0 || dis[next.x][next.y] == dis[grid.x][grid.y] + 1)){
-
-                    if (!flag[next.x][next.y])
-                        obstacle[next.x][next.y] = next.obstacle;
-                    else{
-                        if (next.obstacle >= obstacle[next.x][next.y])
-                            next.obstacle = obstacle[next.x][next.y];
-                        else
-                            obstacle[next.x][next.y] = next.obstacle;
-                    }
-
-                    dis[next.x][next.y] = dis[grid.x][grid.y] + 1;
+                if (is_inside(next) && next.obstacle <= k && dis[next.x][next.y][next.obstacle] == 0){
+                    dis[next.x][next.y][next.obstacle] = dis[grid.x][grid.y][grid.obstacle] + 1;
                     queue.add(next);
                 }
             }
@@ -92,36 +77,35 @@ public class PatrolRobot {
             m = input.nextInt();
             n = input.nextInt();
             k = input.nextInt();
-            init(m, n);
+            init();
             for (int j = 0; j < m; j++) {
                 for (int l = 0; l < n; l++) {
                     int aij = input.nextInt();
                     graph[j][l] = aij;
                 }
             }
-//            if (k > Math.max(n,m)){
-//                System.out.println(n + m - 2);
-//            }eles{
-//                bfs();
-//                System.out.println(dis[m-1][n-1] - 1);
-//            }
-            if (i == 298){
+            if (k > Math.max(n,m)){
+                System.out.println(n + m - 2);
+            }else{
                 bfs();
-                for (int j = 0; j < m; j++) {
-                    for (int l = 0; l < n; l++) {
-                        System.out.print(dis[j][l]+" ");
-                    }
-                    System.out.println();
+                ArrayList<Integer> array = new ArrayList<>();
+                for (int j = 0; j <= k; j++) {
+                    int d = dis[m-1][n-1][j];
+                    if (d != 0)
+                        array.add(d);
                 }
-                System.out.println();
-                for (int j = 0; j < m; j++) {
-                    for (int l = 0; l < n; l++) {
-                        System.out.print(obstacle[j][l]+" ");
+                if (array.size() == 0)
+                    System.out.println("-1");
+                else{
+                    int min = array.get(0);
+                    for (int j = 1; j < array.size(); j++) {
+                        int d = array.get(j);
+                        if (d < min)
+                            min = d;
                     }
-                    System.out.println();
+                    System.out.println(min - 1);
                 }
             }
-
 
         }
     }
