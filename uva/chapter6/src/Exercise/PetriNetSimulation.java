@@ -92,12 +92,15 @@ public class PetriNetSimulation {
                         count++;
                         judge_enable(enter_token, -1);
                         judge_enable(exit_token, 1);
+                        break;
                     }
                 }
+
                 if (!enable){
                     is_dead = true;
                     System.out.print("dead after " + count + " transitions\n");
                     System.out.print("Places with tokens: ");
+                    //TODO:more space in the end
                     for (int i = 0; i < np; i++) {
                         if (token[i] != 0)
                             System.out.print((i+1) + " (" + token[i] + ") ");
