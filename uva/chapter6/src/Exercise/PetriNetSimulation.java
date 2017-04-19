@@ -25,17 +25,6 @@ public class PetriNetSimulation {
             mapop_value.put(put,1);
         map_op.put(i,mapop_value);
     }
-    public static Map<Integer,Integer> getTokenMap(ArrayList<Integer> arrayList){
-        Map<Integer, Integer> token_count = new HashMap<>();
-        for (int j = 0; j < arrayList.size(); j++) {
-            int input_token = arrayList.get(j);
-            if (token_count.containsKey(input_token))
-                token_count.put(input_token, token_count.get(input_token) + 1);
-            else
-                token_count.put(input_token, 1);
-        }
-        return token_count;
-    }
 
     public static boolean judge_enable(Map<Integer,Integer> map, int op){
         boolean flag = true;
@@ -100,23 +89,24 @@ public class PetriNetSimulation {
                     is_dead = true;
                     System.out.print("dead after " + count + " transitions\n");
                     System.out.print("Places with tokens: ");
-                    //TODO:more space in the end
+                    String result = "";
                     for (int i = 0; i < np; i++) {
                         if (token[i] != 0)
-                            System.out.print((i+1) + " (" + token[i] + ") ");
+                            result += (i+1) + " (" + token[i] + ") ";
                     }
-                    System.out.println("\n");
+                    System.out.println(result.substring(0,result.length()-1)+"\n");
                     break;
                 }
             }
             if (!is_dead){
                 System.out.println("still live after " + count + " transitions");
                 System.out.print("Places with tokens: ");
+                String result = "";
                 for (int i = 0; i < np; i++) {
                     if (token[i] != 0)
-                        System.out.print((i+1) + " (" + token[i] + ") ");
+                        result += (i+1) + " (" + token[i] + ") ";
                 }
-                System.out.println("\n");
+                System.out.println(result.substring(0,result.length()-1)+"\n");
             }
         }
     }
