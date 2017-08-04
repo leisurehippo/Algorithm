@@ -1,14 +1,11 @@
+import java.util.ArrayList;
+
 public class Test{
     public static void main(String[] args) {
 
 
-        String string = "b6";
-        char a = string.charAt(0);
-        char b = string.charAt(1);
-        int x = a-'a';
-        int y = b-'1';
-
-        System.out.println("test1");
-        System.out.println(x+" "+y);
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.set(2,5);
+        System.out.println(arrayList.size());
     }
 }
